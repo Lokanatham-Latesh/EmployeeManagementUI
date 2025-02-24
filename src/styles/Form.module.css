@@ -1,0 +1,83 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 30px;
+  width: 400px;
+    max-height: 80vh;
+      /* Prevent the modal from going off-screen */
+      overflow-y: auto;
+      /* Allow scrolling if content overflows */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* Makes content stack vertically */
+}
+
+.modalContent h3 {
+  font-size: 1.5rem;
+}
+
+.modalContent button {
+  font-size: 1.5rem;
+}
+.custom-container {
+  max-width: 500px;
+
+}
+
+/* Custom styles for badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.primary {
+  background-color: #007bff;
+}
+
+.close {
+  cursor: pointer;
+  margin-left: 60px;
+  font-size: 18px;
+  color: #fff;
+  align-items: center;
+}
+
+.close:hover {
+  color: #f8f9fa;
+}
+
+.modalContent form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Adds space between form fields */
+}
+
+.modalContent button[type="submit"] {
+  margin-top: auto;
+  /* Push the button to the bottom */
+  width: 100%;
+  /* Ensure it spans full width */
+}
