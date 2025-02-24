@@ -131,7 +131,7 @@ const EmployeeList = () => {
                     </td>
                     <td>
                       <FaEye
-                        className="text-primary me-2 cursor-pointer"
+                        className="text-secondary me-2 cursor-pointer"
                         aria-label="view-icon"
                         onClick={() => handleViewEmployee(employee.id)}
                       />
@@ -141,7 +141,7 @@ const EmployeeList = () => {
                         onClick={() => handleEditEmployee(employee.id)}
                       />
                       <FaTrashAlt
-                        className="text-danger me-2 cursor-pointer"
+                        className="text-secondary me-2 cursor-pointer"
                         aria-label="delete-icon"
                         onClick={() => handleDeleteEmployee(employee.id)}
                       />

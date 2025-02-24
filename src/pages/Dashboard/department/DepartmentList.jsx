@@ -10,15 +10,14 @@ import {
 const DepartmentList = () => {
   const [departments, setDepartments] = useState([]);
   const [departmentPage, setDepartmentPage] = useState(0);
-  const [departmentPageSize, setDepartmentPageSize] = useState(5); 
+  const [departmentPageSize, setDepartmentPageSize] = useState(5);
   const [totalPages, setTotalPages] = useState(0);
   const [selectedDepartment, setSelectedDepartment] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
- 
   useEffect(() => {
     fetchDepartments();
-  }, [departmentPage, departmentPageSize]); 
+  }, [departmentPage, departmentPageSize]);
 
   const fetchDepartments = () => {
     getpaginatedDepartments(departmentPage, departmentPageSize).then(
@@ -45,7 +44,7 @@ const DepartmentList = () => {
             departments.length === 1 && departmentPage > 0
               ? departmentPage - 1
               : departmentPage;
-          setDepartmentPage(newPage); 
+          setDepartmentPage(newPage);
           fetchDepartments();
           Swal.fire("Deleted!", "The department has been deleted.", "success");
         });
@@ -100,7 +99,7 @@ const DepartmentList = () => {
                         }}
                       />
                       <FaTrashAlt
-                        className="text-danger me-2 cursor-pointer"
+                        className="text-secondary me-2 cursor-pointer"
                         title="Delete"
                         onClick={() => handleDeleteDepartment(department.id)}
                       />
@@ -129,7 +128,7 @@ const DepartmentList = () => {
               value={departmentPageSize}
               onChange={(e) => {
                 setDepartmentPageSize(parseInt(e.target.value, 10));
-                setDepartmentPage(0); 
+                setDepartmentPage(0);
               }}
               style={{ width: "80px", fontSize: "14px" }}
             >
