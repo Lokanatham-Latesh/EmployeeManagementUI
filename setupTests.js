@@ -5,8 +5,8 @@ beforeAll(() => {
     matches: false,
     media: query,
     onchange: null,
-    addListener: vi.fn(), // Deprecated API
-    removeListener: vi.fn(), // Deprecated API
+    addListener: vi.fn(), 
+    removeListener: vi.fn(),
     addEventListener: vi.fn(),
     removeEventListener: vi.fn(),
     dispatchEvent: vi.fn(),
