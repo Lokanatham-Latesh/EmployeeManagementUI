@@ -8,6 +8,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dummyUser = { email: "admin@example.com", password: "password123" };
+
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
