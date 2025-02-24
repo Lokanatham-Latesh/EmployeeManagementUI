@@ -1,4 +1,4 @@
-React-Based Employee Management
+React-Based Employee Management UI
 Description
 The React-Based Employee Management UI is a front-end application designed to manage employees efficiently. It interacts with a backend API to perform CRUD operations such as adding, updating, deleting, and fetching employee data. The application ensures a smooth user experience with authentication, form validation, pagination, sorting, error handling using interceptors, and visually appealing alerts using SweetAlert.
 
