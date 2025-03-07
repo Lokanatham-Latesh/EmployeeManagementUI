@@ -1,6 +1,6 @@
-import http from "./http"; 
+import http from "./http";
 export const getDepartments = async () => {
-  return await http.get("/departments"); 
+  return await http.get("/departments");
 };
 
 export const getpaginatedDepartments = async (page, size) => {

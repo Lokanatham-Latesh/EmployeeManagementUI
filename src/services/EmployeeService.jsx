@@ -1,4 +1,4 @@
-import http from "./http"; 
+import http from "./http";
 
 export const getEmployees = async (page, size) => {
   return await http.get(`/employees/paginated?page=${page}&size=${size}`);
